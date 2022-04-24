@@ -19,13 +19,13 @@ describe('AppComponent', () => {
   it(`should have as title 'odds-coming-soon'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('odds-coming-soon');
+    expect(app.title).toEqual('coming soon by @fickkm');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('odds-coming-soon app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('coming soon by @fickkm');
   });
 });
